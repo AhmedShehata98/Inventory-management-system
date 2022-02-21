@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="pricing row mb-2 justify-content-between align-item-center" >
-                    <div class="col-5 mb-1 col-lg-2 pe-0">
+                    <div class="col-12 mb-1 col-lg-2 pe-0">
                         <div class="input-group">
                             <span class="input-group-text">price</span>
                             <input class="form-control text-uppercase" type="number" required placeholder=" price..." id="price">
@@ -62,13 +62,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 mb-1 pe-0 col-lg-2 pe-0">
+                    <div class="col-12 mb-1 pe-0 col-lg-2 pe-0">
                         <input class="form-control text-uppercase" type="number"  placeholder="Taxes ..." id="tax">
                     </div>
-                    <div class="col-3 mb-1 pe-0 col-lg-2 pe-0">
+                    <div class="col-12 mb-1 pe-0 col-lg-2 pe-0">
                         <input class="form-control text-uppercase" type="number"  placeholder="ads ..." id="ads">
                     </div>
-                    <div class="col-3 mb-1 pe-0 col-lg-2 pe-0">
+                    <div class="col-8 mb-1 pe-0 col-lg-2 pe-0">
                         <input class="form-control text-uppercase" type="number" placeholder="discount ..." id="discount">
                     </div>
                     <div class="col-4 mb-1 pe-0 col-lg-2 pe-0">
@@ -78,28 +78,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="count row mb-2 align-item-center justify-content-between">
-                    <div class="input-group">
-                        <span class="input-group-text">count</span>
-                        <input class="form-control" type="number" placeholder="Count of product..." id="count">
-                        <span class="input-group-text ms-3">Category</span>
-                        <input class="form-control" type="text" placeholder="category..." id="Category">
+                <div class="count row mb-2 gap-2 align-item-center justify-content-between">
+                    <div class="col-12 col-6">
+                        <div class="input-group">
+                            <span class="input-group-text">count</span>
+                            <input class="form-control" type="number" placeholder="Count of product..." id="count">
+                        </div>
                     </div>
-                    
+                    <div class="col-12 col-6">
+                        <div class="input-group">
+                            <span class="input-group-text">Category</span>
+                            <input class="form-control" type="text" placeholder="category..." id="Category">
+                        </div>
+                    </div>
                 </div>
                 <div class="search row mt-4 justify-content-between gap-1 ">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 mb-2">
                         <span class="input-group-text fw-bold text-uppercase">products count is : <span class="bg-success py-1 px-3 text-light ms-2 " id="product_count"></span></span>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-lg-7">
                         <button class="btn btn-success  bg-gradient shadow rounded w-100 fw-bold" type="submit" id="CreateBtn"><i class="bi bi-plus-square pe-3"></i> Create</button>
                     </div>
                 </div>
             </form>
                 <div class="outputs row border border-secondary rounded mb-4 pt-2 align-item-center justify-content-between">
-                    <div class="search col-12 col-lg-6 d-flex align-item-center justify-content-between mb-2">
-                        <span class="input-group-text  fw-bold text-uppercase">search</span>
-                        <input class="form-control text-capitalize" type="search" placeholder="Search on products..." id="searchField">
+                    <div class="col-12 col-lg-6 mb-2">
+                        <div class="input-group">
+                            <span class="input-group-text  fw-bold text-uppercase">search</span>
+                            <input class="form-control text-capitalize" type="search" placeholder="Search on products..." id="searchField">
+                        </div>
                     </div>
                     <div class="col-12 col-lg-4 mb-2">
                         <select  class="form-select py-3 fw-bold text-uppercase" name="search" id="searchMethod">
