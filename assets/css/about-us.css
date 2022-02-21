@@ -1,0 +1,149 @@
+/* import  Font Family*/
+/*En font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/*ar font*/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
+/* End import  Font Family*/
+.navbar {
+  background-color: #116530;
+}
+
+.navbar .mainLogo {
+  color: #FFFDDE;
+}
+
+.navbar .mainLogo::first-letter {
+  color: #F05454;
+}
+
+.navbar #mainLinks {
+  height: 70px;
+}
+
+.navbar #mainLinks ul.nav {
+  height: 100%;
+}
+
+.navbar #mainLinks ul.nav li.nav-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1.5px;
+  -webkit-transition: width 0.3s ease-out ,background-color 0.3s ease-out;
+  transition: width 0.3s ease-out ,background-color 0.3s ease-out;
+}
+
+.navbar #mainLinks ul.nav li.nav-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0%;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #f6f6f8;
+  border-radius: 50px;
+}
+
+.navbar #mainLinks ul.nav li.nav-item:hover::after, .navbar #mainLinks ul.nav li.nav-item.active::after {
+  width: 90%;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.navbar #mainLinks ul.nav li.nav-item:not(:last-child):hover {
+  background-color: rgba(68, 68, 68, 0.274);
+}
+
+.navbar #mainLinks ul.nav li.nav-item.active ::after {
+  width: 90%;
+  background-color: rgba(68, 68, 68, 0.274);
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.navbar #mainLinks ul.nav li.nav-item .langBTN {
+  font-family: 'cairo' ,system-ui;
+}
+
+body {
+  -webkit-animation-name: pageLoad;
+          animation-name: pageLoad;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.about-us {
+  min-height: calc(100vh - 78px);
+  position: relative;
+  z-index: 2;
+  background-image: url(assets/images/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222222bb;
+}
+
+.about-us > .container {
+  position: relative;
+  z-index: 3;
+}
+
+.about-us > .container .heading {
+  background-color: #f6f6f8;
+  padding: 0.5rem 2.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border-bottom: 6px solid #116530;
+}
+
+.about-us > .container .profile_gallery .card {
+  position: relative;
+  max-width: 250px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #f8f6f6;
+  border-radius: 15px;
+}
+
+.about-us > .container .profile_gallery .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.about-us > .container .profile_gallery .card > img {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 55%;
+  -webkit-box-shadow: 0px 0 20px 5px rgba(51, 51, 51, 0.596);
+          box-shadow: 0px 0 20px 5px rgba(51, 51, 51, 0.596);
+}
+
+.about-us > .container .profile_gallery .card .card-header {
+  margin-top: 70px;
+}
+/*# sourceMappingURL=about-us.css.map */
