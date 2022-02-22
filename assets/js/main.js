@@ -58,7 +58,7 @@ ProductDiscount.addEventListener('input',GET_TOTAL_PRICE);
 
 
 CreateBTN.addEventListener('click',async ()=>{
-    if (ProductTitle !== '' && ProductPrice !== '') {
+    if (ProductTitle.value !== '' && ProductPrice.value !== '') {
         if (mode === true) {
             
             FETCH_DATABASE_WITH_UPDATE();
