@@ -17,6 +17,8 @@ const pricingForm = document.querySelector('#mainPriceingForm'),
     searchMethod    = document.getElementById('searchMethod'),
     alertBox_Container = document.getElementById('alertBox_Container'),
     updateBTN = document.getElementById('updateBtn'),
+    mainLinks = document.querySelector('.mainLinks'),
+    togglerBTN = document.querySelector('.togglerBTN'),
     TableOutData    = document.getElementById('myoutputArea');
 
 
@@ -34,9 +36,15 @@ window.addEventListener('load',()=>{
     ProductTitle.focus()
     if (document.querySelector('html').lang === 'ar') {
         document.body.style.fontFamily = "'cairo' ,system-ui"
+        document.getElementById('langBTN').style.marginLeft= 'initial'
+        document.getElementById('langBTN').style.marginRight= '28px'
     }else{
         document.body.style.fontFamily = "'Poppins' ,system-ui"
     }
+})
+
+togglerBTN.addEventListener('click',(e)=>{
+    mainLinks.classList.toggle('active');
 })
 
 pricingForm.addEventListener('submit',(e)=>{

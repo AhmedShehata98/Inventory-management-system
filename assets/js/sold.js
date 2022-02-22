@@ -6,16 +6,28 @@ let totalSales = document.getElementById('totalSales'),
      passwordInputField = document.getElementById('passwordInputField'),
      CloseBTN = document.getElementById('CloseBTN'),
      errorMSGInner = document.getElementById('ErrorMSG');
-
+let    mainLinks = document.querySelector('.mainLinks');
+let    togglerBTN = document.querySelector('.togglerBTN');
+     
      let apiurl = 'https://imsapi.onrender.com/products';
      let totalresult = 0 ;
      let ID;
 
+
+
 if (document.querySelector('html').lang === 'ar') {
      document.body.style.fontFamily= " 'Cairo',system-ui ";
+     document.getElementById('langBTN').style.marginLeft= 'initial'
+     document.getElementById('langBTN').style.marginRight= '28px'
  }else{
      document.body.style.fontFamily= " 'Poppins',system-ui ";
 }
+
+togglerBTN.addEventListener('click',(e)=>{
+     mainLinks.classList.toggle('active');
+})
+
+
 
 FETCH_SOLDOUT_DATA()
 async function FETCH_SOLDOUT_DATA(api){
